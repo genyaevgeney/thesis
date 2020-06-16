@@ -54,4 +54,8 @@ class ControlController extends Controller
     public function calculateCarbonQualityParametersPerShift(Request $request) {
         return $this->service->calculateCarbonBlackQualityParametersPerShift($request->shiftId, $request->enterpriseDay);
     }
+
+    public function getDataByDays(Request $request) {
+        return $this->service->getDataByDays($request->daysArr);
+    }
 }

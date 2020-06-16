@@ -73,3 +73,4 @@ Route::post('/calculate/shifts-gas-costs', "SensorController@getAllLineGasPerShi
 
 Route::post('/calculate/carbon-params', "ControlController@calculateCarbonQualityParametersPerShift");
 
+Route::post('/controls-card', "ControlController@getDataByDays");

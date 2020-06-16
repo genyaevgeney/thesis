@@ -33,6 +33,9 @@
     <div class="Dashboard__item hover-scale-shadow" @click="showModal('carbon-modal')">
         <span>Параметри якості технічного вуглецю</span>
     </div>
+    <router-link to="/shuhart-cards" class="Dashboard__item hover-scale-shadow">
+        <span>Створення карт Шухарта середнього та розмахів для параметрів вуглецю</span>
+    </router-link>
     
     <!-- <span @click="test">test</span> -->
 
@@ -757,7 +760,11 @@
   flex-wrap:wrap;
   &__item {
     background-color: white;
-    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black !important;
     text-decoration:none;
     width: 48%;
     margin-bottom: 30px;

@@ -80,4 +80,9 @@ class ControlService extends AbstractService implements ControlInterface
     {
         return $this->repository->getByShiftsIdArr($shiftsIdArr);
     }
+
+    public function getDataByDays($daysArr)
+    {
+        return $this->repository->getDataByDays($daysArr);
+    }
 }

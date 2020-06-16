@@ -77,6 +77,11 @@ export default new Router({
           path: 'controls/page=:num',
           component: () => import('@/views/dashboard/pages/ControlsPage'),
         },
+        {
+          name: 'Карти Шухарта середнього та розмахів для параметрів технічного вуглецю',
+          path: '/shuhart-cards',
+          component: () => import('@/views/dashboard/pages/HumidityCard'),
+        },
       ],
     },
   ],

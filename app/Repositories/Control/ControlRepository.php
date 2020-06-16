@@ -30,6 +30,13 @@ class ControlRepository extends AbstractRepository implements ControlInterface
             get();
     }
 
+    public function getDataByDays($daysArr)
+    {
+        return $this->model->
+            whereIn('enterprise_day_id', $daysArr)->
+            get();
+    }
+
     public function getByDayId(int $dayId)
     {
         return $this->model->where('enterprise_day_id', $dayId)->get();
