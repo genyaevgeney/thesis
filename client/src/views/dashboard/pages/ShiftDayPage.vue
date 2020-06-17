@@ -75,6 +75,8 @@
           </tr>
         </table>
       </tab>
+      <tab title="">
+      </tab>
     </tabs>
   </div>
 </template>

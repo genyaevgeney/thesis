@@ -79,15 +79,7 @@
       <div />
     </v-list>
 
-    <template v-slot:append>
-      <base-item
-        :item="{
-          title: $t('upgrade'),
-          icon: 'mdi-package-up',
-          to: '/upgrade',
-        }"
-      />
-    </template>
+
   </v-navigation-drawer>
 </template>
 
@@ -117,7 +109,7 @@
           to: '/',
         },
         {
-          icon: 'mdi-account',
+          icon: 'mdi-camera-metering-matrix',
           title: 'Дні підприємства',
           to: '/days/page=1',
         },
@@ -138,13 +130,8 @@
         },
         {
           title: 'Дані замірів',
-          icon: 'mdi-map-marker',
+          icon: 'mdi-note',
           to: '/controls/page=1',
-        },
-        {
-          title: 'notifications',
-          icon: 'mdi-bell',
-          to: '/components/notifications',
         },
       ],
     }),
